@@ -5,11 +5,11 @@ import MuiAccordionSummary, {
     AccordionSummaryProps,
 } from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
-
+import dashboardData from "../../helpers/data/dashboard.json"
 const Accordion = styled((props: AccordionProps) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
-))(({ theme }) => ({ 
-     
+))(({ theme }) => ({
+
     marginBottom: '20px',
     backgroundColor: '#fafafb',
     borderRadius: '12px',
@@ -81,43 +81,20 @@ const InfoCenter: FC<{}> = () => {
                 padding: '39px 20px 19px',
 
             }}>
-                <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-                    <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                        <Typography>Where are the 10x10, 10x20, etc booth packages?</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            Since the show provides white walls, exhibitors can now go directly to Expresso to order any wall graphics and furniture they need.
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-                    <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-                        <Typography>Is custom carpet available to order?</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            Yes.  Please visit GES Expresso to order: https://ordering.ges.com/011602308
-
-                            FYI:  Exhibitor must complete the form stating the standard show carpet is not wanted.
-                            If the form is not completed and standard carpet has been installed, it is the exhibitor's
-                            responsibility for labor charges to remove the carpet.
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-                    <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-                        <Typography>May we hang our own graphics on the walls of our booth?</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            Exhibitors may not attach anything to the walls.  Exhibitors must visit the GES Servicenter, on-site,
-                            during set up to obtain wall hanging brackets.
-                            Wall hanging brackets are given on-site on a first-come first-serve basis and cannot be pre-ordered or reserved.
-                            Exhibitors are responsible for any damage to the fabric from wall-hanging brackets.
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
+                {dashboardData.infocenterData.map((data) => {
+                    return (
+                        <Accordion expanded={expanded === `${data.id}`} onChange={handleChange(`${data.id}`)}>
+                            <AccordionSummary aria-controls={`panel{${data.id}}-content`} id={`panel{${data.id}}-header`}>
+                                <Typography>{data.title}</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography>
+                                    {data.desc}
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+                    );
+                })}
             </Box>
         </Box>
     )

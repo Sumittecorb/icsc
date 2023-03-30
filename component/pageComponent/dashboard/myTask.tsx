@@ -1,9 +1,10 @@
 import { FC } from "react"
 import { Box, Checkbox, CheckboxProps, FormControlLabel, FormGroup, styled, Typography } from "@mui/material"
+import dashboardData from "../../helpers/data/dashboard.json"
 const BpIcon = styled('span')(({ }) => ({
-    borderRadius: 3,
-    width: 16,
-    height: 16, 
+    borderRadius: 8,
+    width: 24,
+    height: 24, 
     backgroundColor: '#ddd',
     backgroundImage:'#ddd',
     '.Mui-focusVisible &': {
@@ -35,12 +36,12 @@ function BpCheckbox(props: CheckboxProps) {
     );
   }
   const BpCheckedIcon = styled(BpIcon)({
-    backgroundColor: '#137cbd',
+    backgroundColor: '#141e4e',
     backgroundImage: 'linear-gradient(180deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,0))',
     '&:before': {
       display: 'block',
-      width: 16,
-      height: 16,
+      width: 24,
+      height: 24,
       backgroundImage:
         "url(\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath" +
         " fill-rule='evenodd' clip-rule='evenodd' d='M12 5c-.28 0-.53.11-.71.29L7 9.59l-2.29-2.3a1.003 " +
@@ -99,6 +100,8 @@ const MyTask: FC<{}> = () => {
             <Box sx={{
 
             }}> 
+              {dashboardData.myTaskData.map((data) => {
+                    return (
                 <FormGroup>
                     <FormControlLabel 
                     sx={{
@@ -107,64 +110,11 @@ const MyTask: FC<{}> = () => {
                         cursor: 'pointer',
                         marginBottom: '14px',
                     }}
-                    control={<BpCheckbox defaultChecked />} 
-                    label="Review your GES Expresso order" />
+                    control={<BpCheckbox  />} 
+                    label={data.title} />
                 </FormGroup>
-                <FormGroup>
-                    <FormControlLabel 
-                    sx={{
-                        font: '400 13px/30px Montserrat',
-                        color: '#666',
-                        cursor: 'pointer',
-                        marginBottom: '14px',
-                    }}
-                    control={<BpCheckbox defaultChecked />} 
-                    label="Download the corresponding Graphic Templates" />
-                </FormGroup>
-                <FormGroup>
-                    <FormControlLabel 
-                    sx={{
-                        font: '400 13px/30px Montserrat',
-                        color: '#666',
-                        cursor: 'pointer',
-                        marginBottom: '14px',
-                    }}
-                    control={<BpCheckbox defaultChecked />} 
-                    label="Download and review the Artwork Guidelines" />
-                </FormGroup>
-                <FormGroup>
-                    <FormControlLabel 
-                    sx={{
-                        font: '400 13px/30px Montserrat',
-                        color: '#666',
-                        cursor: 'pointer',
-                        marginBottom: '14px',
-                    }}
-                    control={<BpCheckbox defaultChecked />} 
-                    label="Upload your Graphic Files" />
-                </FormGroup>
-                <FormGroup>
-                    <FormControlLabel 
-                    sx={{
-                        font: '400 13px/30px Montserrat',
-                        color: '#666',
-                        cursor: 'pointer',
-                        marginBottom: '14px',
-                    }}
-                    control={<BpCheckbox defaultChecked />} 
-                    label="Proof and review updated Designs" />
-                </FormGroup>
-                <FormGroup>
-                    <FormControlLabel 
-                    sx={{
-                        font: '400 13px/30px Montserrat',
-                        color: '#666',
-                        cursor: 'pointer',
-                        marginBottom: '14px',
-                    }}
-                    control={<BpCheckbox defaultChecked />} 
-                    label="Approve designs" />
-                </FormGroup>
+                   );
+                  })}
               
             </Box>
         </Box >
