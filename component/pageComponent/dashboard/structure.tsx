@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material"
 import { FC } from "react"
-
+import dashboardData from "../../helpers/data/dashboard.json"
 const Structure: FC<{}> = () => {
     return (
         <Box
@@ -49,66 +49,41 @@ const Structure: FC<{}> = () => {
             <Box sx={{
 
             }}>
-                <Box sx={{
-                    background: '#0000000d',
-                    borderRadius: '9px',
-                    width: '100%',
-                    padding: '3px 11px',
-                    display: 'inline-block',
-                    margin: '5px 5px 5px 0',
-                    font: '300 10px/29px Montserrat',
-                    letterSpacing: '.55px',
-                    color: '#222',
-                    opacity: '1',
-                }}>
-                    1m Counter [front graphic only]
-                    <Box sx={{
-                        display: 'inline - block',
-                        minWidth: '20px',
-                        height: '20px',
-                        background: '#707070',
-                        borderRadius: '15px',
-                        color: '#fff',
-                        lineHeight: '1',
-                        border: '1px solid #707070',
-                        margin: '5px 1px 0 10px',
-                        padding: '0 4px',
-                        textAlign: 'center',
-                        font: '400 10px/19px Montserrat',
-                        float: 'right',
-                    }}>
-                        1</Box>
-                </Box>
-                <Box sx={{
-                    background: '#0000000d',
-                    borderRadius: '9px',
-                    width: '100%',
-                    padding: '3px 11px',
-                    display: 'inline-block',
-                    margin: '5px 5px 5px 0',
-                    font: '300 10px/29px Montserrat',
-                    letterSpacing: '.55px',
-                    color: '#222',
-                    opacity: '1',
-                }}>
-                    1m Counter [front graphic only]
-                    <Box sx={{
-                        display: 'inline - block',
-                        minWidth: '20px',
-                        height: '20px',
-                        background: '#707070',
-                        borderRadius: '15px',
-                        color: '#fff',
-                        lineHeight: '1',
-                        border: '1px solid #707070',
-                        margin: '5px 1px 0 10px',
-                        padding: '0 4px',
-                        textAlign: 'center',
-                        font: '400 10px/19px Montserrat',
-                        float: 'right',
-                    }}>
-                        1</Box>
-                </Box>
+                {dashboardData.sturctureData.map((data) => {
+                    return (
+                        <Box sx={{
+                            background: '#0000000d',
+                            borderRadius: '9px',
+                            width: '100%',
+                            padding: '3px 11px',
+                            display: 'inline-block',
+                            margin: '5px 5px 5px 0',
+                            font: '300 10px/29px Montserrat',
+                            letterSpacing: '.55px',
+                            color: '#222',
+                            opacity: '1',
+                        }}>
+                            {data.title}
+                            <Box sx={{
+                                display: 'inline - block',
+                                minWidth: '20px',
+                                height: '20px',
+                                background: '#707070',
+                                borderRadius: '15px',
+                                color: '#fff',
+                                lineHeight: '1',
+                                border: '1px solid #707070',
+                                margin: '5px 1px 0 10px',
+                                padding: '0 4px',
+                                textAlign: 'center',
+                                font: '400 10px/19px Montserrat',
+                                float: 'right',
+                            }}>
+                                {data.count}</Box>
+                        </Box>
+                    );
+                })}
+
             </Box>
         </Box >
     )

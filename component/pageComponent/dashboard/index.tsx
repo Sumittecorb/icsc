@@ -11,8 +11,8 @@ const Dashboard: FC<{}> = () => {
             transition: 'all .3s ease-in-out',
             background: '#e9ecef',
             padding: '120px 40px 127px',
-            width: 'calc(100% - 300px)',
-            marginLeft: '291px',
+            width: 'calc(100% - 296px)',
+            marginLeft: '296px',
         }}>
             <Grid
                 container
