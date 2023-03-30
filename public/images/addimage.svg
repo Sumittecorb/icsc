@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <g id="addimage" transform="translate(-365 -207)">
+    <circle id="btn" cx="28" cy="28" r="28" transform="translate(365 207)" fill="#fff"/>
+    <path id="attach_image" data-name="attach image" d="M2,18a1,1,0,0,1-1-1V3A1,1,0,0,1,2,2H8V4H3V16H15V11h2v6a1,1,0,0,1-1,1Zm9.824-5-1.633-2.5,1.088-1L14,13ZM4,13,7.333,8.5,10.667,13Zm9-5V6H11a1,1,0,0,1,0-2h2V2a1,1,0,0,1,2,0V4h2a1,1,0,0,1,0,2H15V8a1,1,0,0,1-2,0Z" transform="translate(384 223)" fill="#343434"/>
+  </g>
+</svg>

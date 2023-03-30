@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="greytick" transform="translate(2863 10881)">
+    <path id="crossred" d="M0,11A11,11,0,1,1,11,22,11,11,0,0,1,0,11Zm2.2,0A8.8,8.8,0,1,0,11,2.2,8.8,8.8,0,0,0,2.2,11Zm2.2,0Z" transform="translate(-2863 -10881)" fill="#707070"/>
+    <path id="rightgrey" d="M4.773,10.568l1.35-1.35,2.7,2.7,5.4-5.4,1.35,1.35-6.749,6.75Z" transform="translate(-2862.173 -10880.568)" fill="#707070"/>
+  </g>
+</svg>

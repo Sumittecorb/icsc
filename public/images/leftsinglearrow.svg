@@ -1,0 +1,4 @@
+<svg id="leftsinglearrow" xmlns="http://www.w3.org/2000/svg" width="35.555" height="35.555" viewBox="0 0 35.555 35.555">
+  <circle id="btn" cx="17.777" cy="17.777" r="17.777" fill="#fff"/>
+  <path id="arrow" d="M-1.778,0-.455,1.323l-3.97,3.97,3.97,3.97-1.323,1.323L-7.071,5.293Z" transform="translate(21.039 13.099)" fill="#888"/>
+</svg>

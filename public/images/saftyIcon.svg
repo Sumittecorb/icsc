@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32">
+  <g id="Group_125" data-name="Group 125" transform="translate(-667 -678.5)">
+    <g id="btn" transform="translate(667 678.5)" fill="#141e4e" stroke="#ddd" stroke-miterlimit="10" stroke-width="1">
+      <ellipse cx="16.5" cy="16" rx="16.5" ry="16" stroke="none"/>
+      <ellipse cx="16.5" cy="16" rx="16" ry="15.5" fill="none"/>
+    </g>
+    <path id="arrow" d="M6.072,9.758a1.168,1.168,0,0,1,0-1.4L8.066,5.878H.831A.83.83,0,0,1,0,5.048V5.02A.83.83,0,0,1,.831,4.19h7.4L6.162,1.628a1.125,1.125,0,0,1,0-1.349.668.668,0,0,1,1.086,0L10.13,3.856a.748.748,0,0,1,.468.284,1.168,1.168,0,0,1,0,1.4l-.011.013a.935.935,0,0,1-.079.116.846.846,0,0,1-.093.1L7.2,9.758a.7.7,0,0,1-1.131,0Z" transform="translate(677.584 689.49)" fill="#83c0ca"/>
+  </g>
+</svg>
