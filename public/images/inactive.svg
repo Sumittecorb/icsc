@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="50" viewBox="0 0 55 50">
+  <defs>
+    <filter id="btn" x="0" y="0" width="50" height="50" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.051"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="inactive" transform="translate(10 5)">
+    <g id="base" fill="#707070" stroke="#ddd" stroke-miterlimit="10" stroke-width="1">
+      <rect width="45" height="30" rx="15" stroke="none"/>
+      <rect x="0.5" y="0.5" width="44" height="29" rx="14.5" fill="none"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -10, -5)" filter="url(#btn)">
+      <rect id="btn-2" data-name="btn" width="20" height="20" rx="10" transform="translate(15 10)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

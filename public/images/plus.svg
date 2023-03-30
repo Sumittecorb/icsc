@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="plus" transform="translate(-14.619 -15.538)">
+    <g id="btn" transform="translate(14.619 15.538)" fill="#141e4e" stroke="#ddd" stroke-miterlimit="10" stroke-width="1">
+      <circle cx="16" cy="16" r="16" stroke="none"/>
+      <circle cx="16" cy="16" r="15.5" fill="none"/>
+    </g>
+    <path id="icon" d="M5.141,11.138V6.854H.857a.857.857,0,0,1,0-1.714H5.141V.857a.857.857,0,0,1,1.714,0V5.141h4.284a.857.857,0,1,1,0,1.714H6.854v4.284a.857.857,0,1,1-1.714,0Z" transform="translate(24.619 25.538)" fill="#83c0ca"/>
+  </g>
+</svg>

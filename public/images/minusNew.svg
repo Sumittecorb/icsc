@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="minus" transform="translate(-14.619 -15.538)">
+    <g id="btn" transform="translate(14.619 15.538)" fill="#141e4e" stroke="#ddd" stroke-miterlimit="10" stroke-width="1">
+      <circle cx="16" cy="16" r="16" stroke="none"/>
+      <circle cx="16" cy="16" r="15.5" fill="none"/>
+    </g>
+    <rect id="_-" data-name="-" width="11" height="1" rx="0.5" transform="translate(25.619 31.538)" fill="#83c0ca"/>
+  </g>
+</svg>

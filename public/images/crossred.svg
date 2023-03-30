@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="redcross" transform="translate(2863 10881)">
+    <path id="crossred" d="M0,11A11,11,0,1,1,11,22,11,11,0,0,1,0,11Zm2.2,0A8.8,8.8,0,1,0,11,2.2,8.8,8.8,0,0,0,2.2,11Zm2.2,0Z" transform="translate(-2863 -10881)" fill="#e83338"/>
+    <path id="crossred-2" data-name="crossred" d="M9.9,16.5V12.1H5.5a1.1,1.1,0,0,1,0-2.2H9.9V5.5a1.1,1.1,0,1,1,2.2,0V9.9h4.4a1.1,1.1,0,1,1,0,2.2H12.1v4.4a1.1,1.1,0,0,1-2.2,0Z" transform="translate(-2852 -10885.956) rotate(45)" fill="#e83338"/>
+  </g>
+</svg>
